@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<p id='display'></p>
+
+	<form>
+
+			<input type="button" value="submit" onclick="OrderOfFruit()">
+
+	</form>
+	
+	<script type="text/javascript">
+		var arr=['cherry', 'apple', 'plum', 'mangoe'];
+		document.getElementById('display').innerHTML= arr.join(' with ');
+
+		function OrderOfFruit(){
+		
+			arr.push(prompt("Name your Fruit").value());
+			arr.sort();
+			document.getElementById("pageText").innerHTML = fruits.join(' with ');
+			
+		}
+	</script>
+</body>
+</html>
